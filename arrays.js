@@ -106,7 +106,7 @@ function equalArrays(arr1, arr2) {
       sum += arr1[i];
     }
   }
-  if(isEqual) {
+  if (isEqual) {
     console.log(`Arrays are identical. Sum: ${sum}`);
   }
 }
@@ -114,20 +114,27 @@ function equalArrays(arr1, arr2) {
 // equalArrays(['10','20','30'],['10','20','30'] );
 
 function condenseArrayToNumber(nums) {
-    let index = 0;
-    let con = [5,2,6,6,6];
-    let newArr = [];
+  let con = [];
 
-    newArr = con;
-    console.log(newArr);
+  let count = nums.length;
+  isCondensed = false;
 
-    if(con.length > 1) {
-        console.log("it is");
-    } else {
-        console.log('No!');
+  if (count === 1) {
+    console.log(`${nums[0]}`);
+  } else {
+    while (count > 1) {
+      for (let i = 0; i < nums.length - 1; i++) {
+        con[i] = nums[i] + nums[i + 1];
+      }
+      nums = con;
+      con = [];
+      count--;
     }
-
-
+    isCondensed = true;
+  }
+  if (isCondensed) {
+    console.log(Number(nums));
+  }
 }
 
-condenseArrayToNumber([5,0,4,1,2])
+condenseArrayToNumber([5]);
