@@ -137,4 +137,8 @@ function condenseArrayToNumber(nums) {
   }
 }
 
-condenseArrayToNumber([5]);
+// condenseArrayToNumber([5]);
+
+//arr.length - kudeto .length e property
+
+
