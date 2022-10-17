@@ -26,12 +26,15 @@ function houseParty(arr) {
     console.log(guestList.join('\n'));
 }
 
-houseParty(['Tom is going!',
+// houseParty(['Tom is going!',
 
-'Annie is going!',
+// 'Annie is going!',
 
-'Tom is going!',
+// 'Tom is going!',
 
-'Garry is going!',
+// 'Garry is going!',
 
-'Jerry is going!'])
+// 'Jerry is going!'])
+
+
+solve()
