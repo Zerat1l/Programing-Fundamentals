@@ -135,3 +135,15 @@ function reverseAString() {
 }
 // reverseAString();
 
+
+function what() {
+  let arr = ['1','2','3','4','5','6','7','8'];
+
+  let even = arr.filter(n => n % 2 == 0);
+  // console.log(even);
+
+  let sum = even.reduce((a,b) => Number(a) + Number(b))
+  // console.log(sum);
+ 
+}
+what()

@@ -255,8 +255,10 @@ function nonDecreasingSubset(arr) {
 
 function magicMatrices(arr) {
 
+ console.table(arr)
+
  
 }
 
-// magicMatrices([[4, 5, 6],[6, 5, 4],[5, 5, 5]])
+magicMatrices([[4, 5, 6],[6, 5, 4],[5, 5, 5]])
 
