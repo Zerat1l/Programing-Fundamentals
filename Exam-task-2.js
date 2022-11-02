@@ -1,7 +1,5 @@
 function numbers(input) {
-
   let numbers = input.shift().split(" ").map(Number);
-  let line = input;
   let commands = input.slice();
   let currentCommand = commands.shift();
 
@@ -40,7 +38,7 @@ function numbers(input) {
     }
     currentCommand = commands.shift();
   }
-  console.log(numbers.join(' '));
+  console.log(numbers.join(" "));
 }
 numbers(["1 4 5 19", "Add 1", "Remove 4", "Finish"]);
 
@@ -49,4 +47,3 @@ numbers(["1 4 5 19", "Add 1", "Remove 4", "Finish"]);
 // "Remove 9",
 // "Finish"])
 // numbers(["1 20 -1 10", "Collapse 8", "Finish"]);
-
