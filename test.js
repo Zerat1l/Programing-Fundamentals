@@ -20,4 +20,10 @@ function solve(array) {
    
 }
 
-solve(['1','2','3','45','33','18','1'])
+// solve(['1','2','3','45','33','18','1'])
+
+
+let line = 'addMovie Godfather';
+
+let splited = line.split('addMovie ')
+console.log(splited);
