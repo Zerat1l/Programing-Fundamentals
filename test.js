@@ -23,7 +23,23 @@ function solve(array) {
 // solve(['1','2','3','45','33','18','1'])
 
 
-let line = 'addMovie Godfather';
+function test() {
 
-let splited = line.split('addMovie ')
-console.log(splited);
+    let str = 'Isacc / 25 / Apple, GravityGun';
+
+    let firstSplit = str.split(' / ');
+    console.log(firstSplit);
+    let name = firstSplit.shift();
+    let level = firstSplit.shift();
+    console.log(name);
+    console.log(level);
+    console.log(firstSplit);
+    let secSplit = firstSplit.join('').split(', ');
+    console.log(secSplit);
+    let itemOne = secSplit.shift();
+    let itemTwo = secSplit.shift();
+    console.log(itemOne, itemTwo);
+
+}
+
+test();
