@@ -23,23 +23,17 @@ function solve(array) {
 // solve(['1','2','3','45','33','18','1'])
 
 
-function test() {
+function test(json) {
 
-    let str = 'Isacc / 25 / Apple, GravityGun';
-
-    let firstSplit = str.split(' / ');
-    console.log(firstSplit);
-    let name = firstSplit.shift();
-    let level = firstSplit.shift();
-    console.log(name);
-    console.log(level);
-    console.log(firstSplit);
-    let secSplit = firstSplit.join('').split(', ');
-    console.log(secSplit);
-    let itemOne = secSplit.shift();
-    let itemTwo = secSplit.shift();
-    console.log(itemOne, itemTwo);
-
+  let obj = JSON.parse(json);
+  obj.eyes = 'Brown'
+  let isTrue = obj.hasOwnProperty('age');
+  if(isTrue) {
+    obj.age = 33;
+  }
+  console.log(obj);
+  let toJson = JSON.stringify(obj);
+  console.log(toJson);
 }
 
-test();
+test('{"name":"John", "age":30, "car":null}');
