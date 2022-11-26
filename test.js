@@ -36,4 +36,24 @@ function test(json) {
   console.log(toJson);
 }
 
-test('{"name":"John", "age":30, "car":null}');
+// test('{"name":"John", "age":30, "car":null}');
+
+function asd() {
+
+  let arr = ['Joro', 'Lora', 'Mariq'];
+  let copyArr = arr.slice();
+  for (const el of copyArr) {
+    if(el === 'Joro') {
+      let cutted = copyArr.splice(el,1)
+      console.log(`Cutted element is - ${cutted}`);
+    }
+    
+  }
+  let afterIndex = copyArr.indexOf('Mariq');
+  console.log(afterIndex);
+  copyArr.splice(afterIndex + 1,0,'Dimitar');
+ 
+  
+  console.log(copyArr);
+}
+asd()
