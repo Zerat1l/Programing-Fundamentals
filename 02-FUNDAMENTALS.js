@@ -131,7 +131,7 @@ function leapYear(year) {
   }
 }
 
-// leapYear(1989);
+// leapYear(924);
 
 function printAndSum(start, end) {
   let numbers = "";
